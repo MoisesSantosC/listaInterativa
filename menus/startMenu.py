@@ -1,8 +1,6 @@
 # Importando os Módulos
-from menus.listCreationMenu import listCreation
-from menus.listViewMenu import listView
 from menus.programExitMenu import programExit
-from menus.cleanMenu import clear
+from menus.funcionalidades.cleanMenu import clear
 
 # Menu inicial
 def menu():
@@ -25,12 +23,10 @@ def checkMenuOptions(op):
     if op == '1':
         clear()  # limpa a tela do terminal
         print('Você selecionou a opção de Criar uma Lista\n')
-        listCreation()  # Menu da primeira opção
         
     elif op == '2':
         clear()  # limpa a tela do terminal
         print('Você selecionou a opção de Ver Listas\n')
-        listView()  # Menu da segunda opção
         
     elif op == '3':
         clear()  # limpa a tela do terminal
