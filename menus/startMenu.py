@@ -6,11 +6,14 @@ from menus.cleanMenu import clear
 
 # Menu inicial
 def menu():
-    print(f'{10*"="} Menu de Opções {10*"="}')
+    clear()
+    msg_menu = f'{10*"="} Menu de Opções {10*"="}'
+    
+    print(msg_menu)
     print('[1] - Criar uma lista')
     print('[2] - Ver Listas')
     print('[3] - Sair')
-    print(36*"=")
+    print(len(msg_menu) * "=")
     
     # Capturando o valor de entrada do usuário
     menu_op = input('Escolha sua opção (1, 2 ou 3): ')
