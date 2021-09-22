@@ -14,5 +14,5 @@ def menu():
     print(len(msg_menu) * "=")
     
     # Capturando o valor de entrada do usuário
-    menu_op = input('Escolha sua opção (1, 2 ou 3): ')
+    menu_op = input('Escolha sua opção (1, 2 ou 3): ').strip()  # strip -> elimina os espaços em branco adicionais
     checkMenuOptions(menu_op)
