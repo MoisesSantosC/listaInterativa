@@ -3,11 +3,10 @@ from menus.funcionalidades.cleanMenu import clear
 from menus.programExitMenu import programExit
 import menus.startMenu as home
 from menus.funcionalidades import listCreation
-
+from menus.funcionalidades import listView
 
 # Verifica as opções digitadas do menu principal
 def checkMenuOptions(op):
-    op = op.strip()  # elimina os espaços no começo e final da string
     if op == '1':
         clear()  # limpa a tela do terminal
         print('Você selecionou a opção de Criar uma Lista\n')
@@ -16,11 +15,12 @@ def checkMenuOptions(op):
     elif op == '2':
         clear()  # limpa a tela do terminal
         print('Você selecionou a opção de Ver Listas\n')
+        listView.view()
         
     elif op == '3':
         clear()  # limpa a tela do terminal
         print('Você selecionou a opção de Sair\n')
-        programExit()  # Menu da terceira opção
+        programExit()
         
     else:
         print('Selecione uma das opções (1, 2 ou 3)\n')
