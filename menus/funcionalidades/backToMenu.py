@@ -1,5 +1,6 @@
 from menus import startMenu
 from menus import programExitMenu
+from menus.funcionalidades import cleanMenu
 
 
 def back():
@@ -14,7 +15,9 @@ def back():
 
         if not (op == '1' or op == '2'):
             print('\nVerifique a opção digitada e tente novamente\n')
+            continue
         elif op == '1':
             startMenu.menu()
         elif op == '2':
+            cleanMenu.clear()
             programExitMenu.programExit()
