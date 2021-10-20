@@ -18,6 +18,8 @@ def back():
             continue
         elif op == '1':
             startMenu.menu()
+            break
         elif op == '2':
             cleanMenu.clear()
             programExitMenu.programExit()
+            break
